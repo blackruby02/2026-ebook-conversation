@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>말주변 없어도 사람들이 먼저 찾는 대화법</title>
+<meta property="og:title" content="말주변 없어도 사람들이 먼저 찾는 대화법">
+<meta property="og:image" content="https://2026-ebook-conversation.vercel.app/assets/cover-final.webp">
+</head>
+<body style="margin:0">
+<!-- ▼▼▼ 크레킷 HTML 블록: 이 파일 전체를 그대로 붙여넣으면 됩니다 ▼▼▼ -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  /* 표지 컬러: 로열 블루 + 흰 배경 + 하늘색 말풍선 */
+  #cvlp {
+    --blue: #0031a3;
+    --blue-deep: #00237a;
+    --blue-ink: #0a1f5c;
+    --sky: #c5dbea;
+    --sky-2: #e6f0f8;
+    --mist: #f3f7fb;
+    --white: #ffffff;
+    --text: #141a2e;
+    --text-2: #5a6378;
+    --on-blue-2: rgba(255,255,255,.72);
+    --red: #e5383b;
+    --chat-bg: #e8eef4;
+    --me-bubble: #d4e6f6;
+    --radius: 18px;
+  }
+  #cvlp * { box-sizing: border-box; }
+  #cvlp {
+    color: var(--text);
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: -0.02em;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+  }
+  #cvlp img { max-width: 100%; height: auto; display: block; }
+  #cvlp p { margin: 0; }
+
+  /* 모바일 한 컬럼: 데스크톱에서도 폰 폭으로 가운데 정렬 */
+  #cvlp .page { max-width: 480px; margin: 0 auto; background: var(--white); overflow: hidden; }
+  #cvlp section { padding: 72px 22px; position: relative; }
+  #cvlp .white { background: var(--white); color: var(--text); }
+  #cvlp .mist { background: var(--mist); color: var(--text); }
+  #cvlp .blue { background: var(--blue); color: #fff; }
+  #cvlp .center { text-align: center; }
+  #cvlp .gap-m { margin-top: 28px; }
+
+  /* 강조: 핵심 단어만 — 포인트 색 글자 / 색 박스 안 흰 글자 */
+  #cvlp .em { color: var(--blue); font-weight: 800; }
+  #cvlp .blue .em { color: #fff; font-weight: 800; }
+  #cvlp .box {
+    background: var(--blue); color: #fff; font-weight: 800; padding: 1px 5px;
+    -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  }
+  #cvlp .blue .box, #cvlp .insight .box { background: #fff; color: var(--blue); }
+
+  /* 글자 크기 단계: 본문 20~22 / 핵심 28~32 / 결정타 40 */
+  #cvlp .t20 { font-size: 20px; line-height: 1.6; }
+  #cvlp .t22 { font-size: 22px; line-height: 1.6; }
+  #cvlp .t24 { font-size: 24px; line-height: 1.55; }
+  #cvlp .t26 { font-size: 26px; line-height: 1.5; letter-spacing: -0.03em; }
+  #cvlp .t28 { font-size: 28px; line-height: 1.5; letter-spacing: -0.035em; }
+  #cvlp .t32 { font-size: 32px; line-height: 1.45; letter-spacing: -0.04em; }
+  #cvlp .t40 { font-size: 40px; line-height: 1.35; letter-spacing: -0.05em; }
+  #cvlp .b { font-weight: 800; }
+  #cvlp .big { font-weight: 900; }
+  #cvlp .muted { color: var(--text-2); }
+
+  /* ───────── HERO ───────── */
+  #cvlp .hero {
+    padding: 70px 22px 60px; background: var(--white); text-align: center; position: relative;
+  }
+  #cvlp .hero h1 {
+    position: relative; z-index: 1;
+    margin: 22px 0 0; font-size: 32px; line-height: 1.45; font-weight: 900; letter-spacing: -0.045em; color: var(--text);
+  }
+  #cvlp .hero h1 .box { display: inline-block; margin-top: 10px; font-size: 40px; line-height: 1.3; padding: 0 10px; letter-spacing: -0.05em; }
+
+  /* ───────── 공감 카드 ───────── */
+  #cvlp .pains { padding-top: 48px; }
+  #cvlp .pain + .pain { margin-top: 56px; }
+  #cvlp .pain .pain-img { width: 100%; height: auto; border-radius: var(--radius); background: #fff; box-shadow: 0 1px 0 rgba(0,0,0,.03), 0 16px 34px -20px rgba(0,35,122,.45); }
+  #cvlp .pain .text {
+    margin-top: 20px; display: flex; gap: 12px; align-items: flex-start;
+    font-size: 22px; line-height: 1.55; font-weight: 500; letter-spacing: -0.03em;
+  }
+  #cvlp .pain .text .no {
+    flex: none; width: 28px; height: 28px; margin-top: 3px; border-radius: 50%;
+    background: var(--blue); color: #fff;
+    font-size: 13px; font-weight: 800; display: grid; place-items: center;
+  }
+
+  /* ───────── 이미지 슬롯 (파일 없으면 안내 박스 표시) ───────── */
+  #cvlp .slot { position: relative; margin: 0; }
+  #cvlp .slot img { width: 100%; border-radius: 14px; }
+  #cvlp .slot .ph {
+    display: none; aspect-ratio: var(--ar, 4/3);
+    border: 2px dashed rgba(0,49,163,.35); border-radius: 14px;
+    background: repeating-linear-gradient(-45deg, rgba(197,219,234,.28) 0 12px, transparent 12px 24px);
+    color: var(--blue); text-align: center; padding: 18px;
+    flex-direction: column; align-items: center; justify-content: center; gap: 6px;
+    font-size: 14px; line-height: 1.5; font-weight: 700;
+  }
+  #cvlp .slot .ph .ico { font-size: 26px; }
+  #cvlp .slot .ph code { font-size: 12px; font-weight: 500; color: var(--text-2); background: rgba(0,35,122,.06); padding: 2px 8px; border-radius: 6px; }
+  #cvlp .blue .slot .ph { color: #fff; border-color: rgba(255,255,255,.45); background: repeating-linear-gradient(-45deg, rgba(255,255,255,.06) 0 12px, transparent 12px 24px); }
+  #cvlp .blue .slot .ph code { color: var(--on-blue-2); background: rgba(255,255,255,.1); }
+  #cvlp .slot.missing img { display: none; }
+  #cvlp .slot.missing .ph { display: flex; }
+  #cvlp .slot figcaption { margin-top: 10px; font-size: 13px; text-align: center; color: var(--text-2); }
+  #cvlp .blue .slot figcaption { color: var(--on-blue-2); }
+  #cvlp .slot.shot { max-width: 340px; margin-left: auto; margin-right: auto; }
+  #cvlp .slot.shot img { border-radius: 0; box-shadow: none; }
+
+  /* ───────── 말솜씨 섹션 ───────── */
+  #cvlp .nofancy { overflow: hidden; }
+  #cvlp .nofancy .lead { position: relative; }
+  #cvlp .nofancy .frog { margin: 30px auto 0; max-width: 300px; position: relative; }
+  #cvlp .nofancy .frog img { border-radius: 20px; }
+  #cvlp .nofancy .answer { position: relative; }
+
+  /* ───────── 스토리 ───────── */
+  #cvlp .story .para + .para { margin-top: 36px; }
+  #cvlp .story .insight + .para, #cvlp .story .para.gap-xl { margin-top: 72px; }
+  #cvlp .story .para .sub + .lg { margin-top: 6px; }
+  #cvlp .story .slot { margin-top: 40px; }
+  #cvlp .story .slot + .para, #cvlp .story .slot + .slot { margin-top: 40px; }
+  #cvlp .story .insight {
+    margin-top: 32px; padding: 26px 20px; border-radius: var(--radius);
+    background: var(--blue); color: #fff;
+  }
+
+  /* ───────── 오퍼 ───────── */
+  #cvlp .offer { padding-top: 16px; }
+  #cvlp .offer .book { max-width: 290px; margin: 0 auto; }
+  #cvlp .offer .book img { width: 100%; }
+  #cvlp .price-card {
+    margin-top: 26px; padding: 26px 20px 22px; border-radius: 22px; text-align: center;
+    background: #fff; color: var(--text);
+    border: 2px solid var(--blue);
+    box-shadow: 0 24px 50px -30px rgba(0,35,122,.55);
+  }
+  #cvlp .blue .price-card { border-color: #fff; box-shadow: 0 24px 50px -24px rgba(0,0,0,.45); }
+  #cvlp .badge { display: inline-block; padding: 6px 14px; border-radius: 999px; background: var(--blue); color: #fff; font-size: 16px; font-weight: 800; }
+  #cvlp .price-row { margin-top: 14px; display: flex; align-items: baseline; justify-content: center; gap: 10px; }
+  #cvlp .price-row .off { color: var(--red); font-size: 28px; font-weight: 900; }
+  #cvlp .price-row .now { font-size: 44px; font-weight: 900; letter-spacing: -0.045em; line-height: 1.1; color: var(--blue); }
+  #cvlp .price-row .now small { font-size: 22px; font-weight: 800; margin-left: 2px; }
+  #cvlp .orig { margin-top: 4px; color: var(--text-2); font-size: 18px; }
+  #cvlp .orig s { text-decoration-thickness: 1.5px; }
+  #cvlp .notice { margin-top: 16px; font-size: 18px; line-height: 1.5; color: var(--red); font-weight: 800; }
+  #cvlp .buy {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    margin-top: 18px; width: 100%; min-height: 60px; border-radius: 16px;
+    background: var(--blue); color: #fff; text-decoration: none;
+    font-size: 22px; font-weight: 800; letter-spacing: -0.03em;
+    box-shadow: 0 12px 24px -12px rgba(0,49,163,.8);
+    -webkit-tap-highlight-color: transparent;
+    transition: transform .12s ease, filter .12s ease;
+    position: relative; overflow: hidden;
+  }
+  #cvlp .buy:active { transform: scale(.98); filter: brightness(1.1); }
+  #cvlp .countdown {
+    margin-top: 10px; display: inline-flex; gap: 6px; align-items: center; justify-content: center; flex-wrap: wrap;
+    font-size: 15px; color: var(--text-2); background: var(--sky-2); padding: 6px 14px; border-radius: 999px;
+  }
+  #cvlp .countdown b { font-variant-numeric: tabular-nums; color: var(--blue-ink); font-weight: 800; font-size: 17px; }
+
+  /* ───────── 첫 화면 구매 블록 ───────── */
+  #cvlp .hero-offer { margin: 36px auto 0; max-width: 340px; }
+  #cvlp .hero-offer .hero-book { width: 230px; margin: 0 auto; }
+  #cvlp .scroll-down {
+    display: block; width: 0; height: 0; margin: 36px auto 0;
+    border-left: 16px solid transparent; border-right: 16px solid transparent; border-top: 20px solid var(--blue);
+    animation: nudge 1.6s ease-in-out infinite;
+  }
+  @keyframes nudge { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
+
+  /* ───────── 목차 공개 ───────── */
+  #cvlp .preview .pages { margin-top: 30px; display: flex; flex-direction: column; gap: 26px; }
+  #cvlp .preview .slot img { border-radius: 8px; box-shadow: 0 2px 0 rgba(0,0,0,.03), 0 18px 34px -20px rgba(0,35,122,.45); }
+  #cvlp .review-lead { margin-top: 64px; }
+  #cvlp .reviews { margin-top: 28px; display: flex; flex-direction: column; gap: 24px; }
+
+  /* ───────── 마지막 ───────── */
+  #cvlp .final { overflow: hidden; }
+  #cvlp .final .price-card { position: relative; margin-top: 0; }
+  #cvlp footer { padding: 30px 22px calc(30px + env(safe-area-inset-bottom)); background: var(--blue-deep); color: rgba(255,255,255,.5); font-size: 12px; text-align: center; line-height: 1.7; }
+
+  /* 스크롤 등장 */
+  #cvlp.js .rv { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+  #cvlp.js .rv.on { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    #cvlp.js .rv { opacity: 1; transform: none; transition: none; }
+    #cvlp .scroll-down { animation: none; }
+  }
+
+  /* 크레킷 페이지 기본 스타일 덮어쓰기 (아래 클래스 규칙이 더 우선) */
+  #cvlp * { margin: 0; padding: 0; border: 0 solid; color: inherit; font-family: inherit; font-size: inherit;
+            line-height: inherit; letter-spacing: inherit; text-transform: none; text-shadow: none; background-image: none; }
+  #cvlp img { border: 0; box-sizing: border-box; }
+  #cvlp a { -webkit-tap-highlight-color: transparent; }
+  #cvlp .page, #cvlp section, #cvlp header, #cvlp footer { box-sizing: border-box; }
+  #cvlp .countdown { display: none; }
+  #cvlp.js .countdown { display: inline-flex; }
+</style>
+<div id="cvlp">
+<div class="page">
+
+  <!-- ═════════ HERO ═════════ -->
+  <header class="hero">
+    <h1>사람들과 있을 때<br>무슨 말을 해야 할지<br><span class="box">막막한가요?</span></h1>
+    <div class="hero-offer">
+      <img class="hero-book" src="https://2026-ebook-conversation.vercel.app/assets/book-3d.webp" alt="말주변 없어도 사람들이 먼저 찾는 대화법 전자책" width="914" height="1134">
+    </div>
+    <a class="scroll-down" href="#cvlp-pains" aria-label="아래로 스크롤"></a>
+  </header>
+
+  <!-- ═════════ 공감 4가지 ═════════ -->
+  <section class="mist pains" id="cvlp-pains">
+    <div class="pain rv">
+      <img class="pain-img" src="https://2026-ebook-conversation.vercel.app/assets/pain-1.webp" alt="주말에 뭐 했냐는 질문에 '그냥 쉬었어요'라는 짧은 답이 돌아와 대화가 멈춘 모습" width="1536" height="1024">
+      <p class="text"><span class="no">1</span><span>질문을 했는데<br><b class="em">답이 짧게 돌아와<br>대화가 끊긴다.</b></span></p>
+    </div>
+    <div class="pain rv">
+      <img class="pain-img" src="https://2026-ebook-conversation.vercel.app/assets/pain-2.webp" alt="모임에서 다들 떠드는 사이 '저도…' 하고 끼지 못하는 모습" width="1536" height="1024">
+      <p class="text"><span class="no">2</span><span>모임에서<br><b class="em">끼어들 타이밍을 놓쳐</b><br>듣기만 하다 온다.</span></p>
+    </div>
+    <div class="pain rv">
+      <img class="pain-img" src="https://2026-ebook-conversation.vercel.app/assets/pain-4.webp" alt="내가 말한 뒤 모두 말이 없어져 어색해진 모임 분위기" width="1536" height="1024">
+      <p class="text"><span class="no">3</span><span>내가 이야기하면<br><b class="em">분위기가 어색해진다.</b></span></p>
+    </div>
+  </section>
+
+  <!-- ═════════ 화려한 말솜씨 X ═════════ -->
+  <section class="blue nofancy center">
+    <div class="lead rv"><p class="t22">사람들과 편하게 어울리는 데</p><p class="t32 big" style="margin-top:6px">꼭 <span class="box">화려한 말솜씨</span>가<br>필요한 건 아닙니다.</p></div>
+    <figure class="slot frog rv" style="--ar:3/2">
+      <img src="https://2026-ebook-conversation.vercel.app/assets/frog.gif" alt="무대에서 신나게 몸을 흔드는 개구리" width="360" height="240">
+    </figure>
+    <div class="answer gap-m rv"><p class="t20">일상적으로 하는 말, 행동,<br>습관만으로도</p><p class="t28 big" style="margin-top:8px">얼마든지<br><span class="box">'은근히 인기 많은 사람'</span>이<br>될 수 있습니다.</p></div>
+  </section>
+
+  <!-- ═════════ 스토리 ═════════ -->
+  <section class="white story">
+    <div class="para rv"><p class="t24 sub">저도 예전에는</p><p class="t32 big lg">사람들과 잘 어울리지<br><span class="em">못했습니다.</span></p></div>
+
+    <p class="para t22 b rv">다 같이 모이는 자리에서<br>무슨 말을 해야 할지,<br>어떤 반응을 해야 할지 몰라<br><span class="em">어색하게 웃고만 있었습니다.</span></p>
+    <p class="para t22 b rv">어렵게 이야기를 꺼내거나<br>리액션을 해도<br><span class="em">갑분싸가 되거나<br>어색함만 커졌습니다.</span></p>
+
+    <figure class="slot rv" style="--ar:4/5">
+      <img src="https://2026-ebook-conversation.vercel.app/assets/past-selfie.jpg" alt="예전의 내 모습" width="800" height="1000" loading="lazy">
+    </figure>
+
+    <p class="para t20 rv">그 후 대화법에 관한<br>유튜브 영상을 찾아보고<br>강의를 들었습니다.<br>심리학과 인간관계에 관한<br>책도 읽었습니다.</p>
+
+    <figure class="slot rv" style="--ar:800/748">
+      <img src="https://2026-ebook-conversation.vercel.app/assets/books.jpg" alt="대화법·심리학·자기계발 책들이 두 줄로 높이 쌓인 모습" width="800" height="748" loading="lazy">
+    </figure>
+
+    <p class="para t20 rv">배운 방법을 실제 대화에서<br>하나씩 시도하면서</p>
+    <div class="insight rv"><p class="t20">상대가 편하게 말할 수<br>있도록 반응하고</p><p class="t26 big" style="margin-top:10px"><span class="box">"대화의 흐름을 잇는<br>방법을 익히는 것"</span></p><p class="t20" style="margin-top:10px">이 중요하다는 걸<br>알게 되었습니다.</p></div>
+
+    <div class="para rv"><p class="t24 sub">그 방법을 익히면서</p><p class="t32 big lg">제 <span class="em">인간관계</span>도<br>달라졌습니다.</p></div>
+
+    <figure class="slot rv" style="--ar:4/3">
+      <img src="https://2026-ebook-conversation.vercel.app/assets/friends.jpg" alt="친구들 여럿과 함께 찍은 단체 셀피" width="1000" height="750" loading="lazy">
+    </figure>
+    <figure class="slot shot rv" style="--ar:850/195">
+      <img src="https://2026-ebook-conversation.vercel.app/assets/kakao-1.jpg" alt="오빤 왤캐 웃겨? ㅋㅋ 카톡" width="850" height="195" loading="lazy">
+    </figure>
+    <figure class="slot shot rv" style="--ar:850/318">
+      <img src="https://2026-ebook-conversation.vercel.app/assets/kakao-2.jpg" alt="오빠 뭐해요? 다들 오빠 오라고 난리에요 카톡" width="850" height="318" loading="lazy">
+    </figure>
+
+    <div class="para rv"><p class="t20 sub">제가 일부러 튀거나<br>사람들의 관심을 끌려고<br>애쓰지 않아도</p><p class="t28 big lg"><span class="box">먼저 연락해주는 사람</span>이<br>생겼습니다.</p></div>
+
+    <div class="para gap-xl rv"><p class="t22 sub">이 전자책에는 제가</p><p class="t26 big lg"><span class="em">3년간</span> 배우고 시도하며<br>실제로 도움이 됐던 방법을</p><p class="t22">정리했습니다.</p></div>
+    <div class="para rv"><p class="t22 sub">이제 당신이 바뀔 차례입니다.<br>제가 쌓아놓은 노하우로</p><p class="t28 big lg">당신은 <span class="box">바로 내일부터</span><br>바뀔 수 있습니다.</p></div>
+  </section>
+
+  <!-- ═════════ 오퍼 1 ═════════ -->
+  <section class="white offer center" id="buy">
+    <div class="book rv">
+      <img src="https://2026-ebook-conversation.vercel.app/assets/book-3d.webp" alt="말주변 없어도 사람들이 먼저 찾는 대화법 전자책" loading="lazy">
+    </div>
+    <div class="price-card rv">
+      <span class="badge">얼리버드 가격</span>
+      <div class="price-row"><span class="off">68%</span><span class="now">32,000<small>원</small></span></div>
+      <div class="orig">정가 <s>99,000원</s></div>
+      <p class="notice">*<span data-raise-date>이번 주 일요일</span>부터<br>99,000원으로 올라갈 예정</p>
+      <div class="countdown" data-countdown>가격 인상까지 <b>-</b></div>
+      <a class="buy" href="https://whiteruby02.crekit.io/l/deals/g7dvk97n" data-buy>지금 구매하기</a>
+    </div>
+  </section>
+
+  <!-- ═════════ 목차 공개 ═════════ -->
+  <section class="mist preview">
+    <p class="t32 big center rv">목차와 내용을<br><span class="box">있는 그대로</span> 공개합니다.</p>
+    <div class="pages">
+      <div class="rv">
+        <figure class="slot" style="--ar:1/1.414">
+          <img src="https://2026-ebook-conversation.vercel.app/assets/toc.webp" alt="전자책 목차 페이지" loading="lazy">
+        </figure>
+      </div>
+    </div>
+
+    <div class="review-lead center rv">
+      <p class="t22">실제 효과가 궁금하다면</p>
+      <p class="t24 em">아래 후기부터 확인해보세요 ▾</p>
+    </div>
+    <div class="reviews">
+      <figure class="slot rv" style="--ar:1080/1886">
+        <img src="https://2026-ebook-conversation.vercel.app/assets/review-1.jpg" alt="후기 1 (별점 5점): 질문하고 답을 들은 다음 어떻게 이어갈지 예시가 있어서 이해하기 편했어요" width="1080" height="1886" loading="lazy">
+      </figure>
+      <figure class="slot rv" style="--ar:1080/796">
+        <img src="https://2026-ebook-conversation.vercel.app/assets/review-2.jpg" alt="후기 2 (별점 5점): 제가 어디서 막히는지 좀 알게 된 것 같아요" width="1080" height="796" loading="lazy">
+      </figure>
+      <figure class="slot rv" style="--ar:1080/995">
+        <img src="https://2026-ebook-conversation.vercel.app/assets/review-3.jpg" alt="후기 3 (별점 5점): 책에서 본 방법을 써봤더니 대화가 좀 더 이어졌어요" width="1080" height="995" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ═════════ 마지막 CTA ═════════ -->
+  <section class="blue final center">
+    <div class="price-card rv">
+      <span class="badge">얼리버드 가격</span>
+      <div class="price-row"><span class="off">68%</span><span class="now">32,000<small>원</small></span></div>
+      <div class="orig">정가 <s>99,000원</s></div>
+      <p class="notice">*<span data-raise-date>이번 주 일요일</span>부터<br>99,000원으로 올라갈 예정</p>
+      <div class="countdown" data-countdown>가격 인상까지 <b>-</b></div>
+      <a class="buy" href="https://whiteruby02.crekit.io/l/deals/g7dvk97n" data-buy>지금 구매하기</a>
+    </div>
+  </section>
+
+  <footer>
+    © 말주변 없어도 사람들이 먼저 찾는 대화법<br>
+      </footer>
+</div>
+</div>
+<script>
+(function () {
+  var root = document.getElementById("cvlp");
+  if (!root) return;
+  root.classList.add("js");
+
+  /* ▼▼▼ 결제 페이지 주소를 여기에 넣으세요 ▼▼▼ */
+  var PURCHASE_URL = "https://whiteruby02.crekit.io/l/deals/g7dvk97n";
+  // 구매 버튼 링크
+  root.querySelectorAll("[data-buy]").forEach(function (a) {
+    a.href = PURCHASE_URL;
+  });
+
+  // 가격 인상일: 이번 주(월~일) 일요일, 한국시간 기준. 월요일 0시에 다음 주 일요일로 넘어감.
+  // 테스트: 주소 뒤에 ?now=2026-11-16T09:00:00%2B09:00 를 붙이면 그 시각 기준으로 보여줌
+  var KST = 9 * 3600 * 1000, DAY = 86400 * 1000;
+  var nowOffset = 0;
+  try {
+    var q = new URLSearchParams(location.search).get("now");
+    if (q && !isNaN(Date.parse(q))) nowOffset = Date.parse(q) - Date.now();
+  } catch (e) {}
+  function raiseInfo(nowMs) {
+    var k = new Date(nowMs + KST);
+    var dow = k.getUTCDay();                       // 0=일 ... 6=토
+    var toSunday = (7 - dow) % 7;                  // 일요일이면 0
+    var sundayStart = Date.UTC(k.getUTCFullYear(), k.getUTCMonth(), k.getUTCDate() + toSunday) - KST;
+    var sd = new Date(sundayStart + KST);
+    return {
+      label: (sd.getUTCMonth() + 1) + "월 " + sd.getUTCDate() + "일",
+      // 일요일 0시까지 카운트다운. 일요일 당일에는 그날 자정(월요일 0시)까지.
+      target: dow === 0 ? sundayStart + DAY : sundayStart
+    };
+  }
+  function pad(n) { return n < 10 ? "0" + n : "" + n; }
+  var dateEls = root.querySelectorAll("[data-raise-date]");
+  var cdEls = root.querySelectorAll("[data-countdown] b");
+  function tick() {
+    var now = Date.now() + nowOffset;
+    var info = raiseInfo(now);
+    dateEls.forEach(function (el) { el.textContent = info.label; });
+    var t = Math.max(0, Math.floor((info.target - now) / 1000));
+    var d = Math.floor(t / 86400), h = Math.floor(t % 86400 / 3600), m = Math.floor(t % 3600 / 60), sec = t % 60;
+    var txt = (d > 0 ? d + "일 " : "") + pad(h) + ":" + pad(m) + ":" + pad(sec);
+    cdEls.forEach(function (el) { el.textContent = txt; });
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  // 스크롤 등장 효과
+  var pending = Array.prototype.slice.call(root.querySelectorAll(".rv"));
+  function onScroll() {
+    var vh = window.innerHeight;
+    pending = pending.filter(function (el) {
+      if (el.getBoundingClientRect().top < vh - 40) { el.classList.add("on"); return false; }
+      return true;
+    });
+    var atBottom = window.scrollY + vh >= document.documentElement.scrollHeight - 4;
+    if (atBottom) pending.forEach(function (el) { el.classList.add("on"); });
+  }
+  var ticking = false;
+  window.addEventListener("scroll", function () {
+    if (ticking) return; ticking = true;
+    requestAnimationFrame(function () { ticking = false; onScroll(); });
+  }, { passive: true });
+  window.addEventListener("resize", onScroll);
+  onScroll();
+
+})();
+</script>
+</body>
+</html>
